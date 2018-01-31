@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="margin-top: 20px">
+    <h2>block--->JS与OC交互</h2>
+    <input type="button" value="block" onclick="ml_call('我是从JS传出来的值')">
+</div>
+
+<div>
+    <input type="button" value="block" onclick="call()">
+</div>
+
+<h2>delegate--->JS与OC交互</h2>
+     <div>
+        <input type="button" value="delegate---唤起本地方法(call)" onclick="mali.call()">
+    </div>
+
+    <div>
+        <input type="button" value="delegate---唤起getCall:(NSString *)callString传值" onclick="delegate_call()">
+    </div>
+    
+    <div>
+        <button onclick = "clickA('分享')">点击按钮</button>
+    </div>
+    
+        
+
+<script>
+    
+    function clickA(str){
+        showToase(str);
+    }
+    
+var delegate_call = function()
+    {
+        var callInfo = JSON.stringify({"jianshu": "http://www.jianshu.com"});
+        mali.getCall(callInfo);
+    }
+
+var Callback = function(str)
+{
+    alert(str);
+}
+
+var call = function()
+{
+    var callInfo = JSON.stringify({"jianshu": "http://www.jianshu.com"});
+    ml_go_call(callInfo);
+}
+
+var alerCallback = function()
+{
+    alert('成功');
+}
+
+</script>
+</body>
+</html>
+
+

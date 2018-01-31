@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  各种各样
+//
+//  Created by 董磊 on 2017/11/12.
+//  Copyright © 2017年 董磊. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#define SCRWidth [UIScreen mainScreen].bounds.size.width
+#define SCRHeight [UIScreen mainScreen].bounds.size.height
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define ThreeLineHeight 50.121095
+
+
+
+#import "DBManger.h"
+
+#import "NSString+CategoryName.h"
+
+#import <JavaScriptCore/JavaScriptCore.h>
+
+#import "AFNetworking.h"
+
+#import "netStateView.h"
+
+#import "YYKit.h"
+
+#import "Masonry.h"
+
+#import "各种各样-Swift.h"
+
+#import "UIView+SDAutoLayout.h"
+
+#import "SDAutoLayout.h"
+
+#import "UIImage+color.h"
